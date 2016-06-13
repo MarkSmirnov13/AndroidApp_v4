@@ -22,7 +22,7 @@ import java.util.Random;
 /**
  * Created by user on 6/8/2016.
  */
-public class SpaceShooterView extends SurfaceView implements Runnable{
+public class  SpaceShooterView extends SurfaceView implements Runnable{
 
     Context context;
     final Random random = new Random();
@@ -184,6 +184,7 @@ public class SpaceShooterView extends SurfaceView implements Runnable{
     private int s = 1;
     @Override
     public void run() {
+        score = 0;
         while (playing) {
 
             // Capture the current time in milliseconds in startFrameTime
